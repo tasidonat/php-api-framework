@@ -1,0 +1,22 @@
+{
+    "name": "tasidonat/api-framwork",
+    "description": "PHP API framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        },
+        "files": [
+            "config/database.php"
+        ]
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public"
+    }
+}
